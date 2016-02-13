@@ -8,12 +8,12 @@ import createStore from '@f/store'
  * store
  */
 
-function store (reducer, initialState, koax) {
+function store (reducer, initialState, app) {
   let {dispatch, subscribe, getState, replaceReducer} = createStore(reducer, initialState)
-  koax.use(function (action, next) {
+  app.use(function (action, next) {
     return dispatch(action)
   })
-  koax.bind(getState)
+  app.bind(getState)
   return {subscribe, getState, replaceReducer}
 }
 

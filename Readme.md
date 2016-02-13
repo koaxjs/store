@@ -78,11 +78,11 @@ function postsBySubredit (state, action) {
 
 ## API
 
-### store(reducer, initialState, koax)
+### store(reducer, initialState, app)
 
 - `reducer` - redux style reducer
 - `initialState` - initial state object
-- `koax` - koax app to bind state and mount store dispatcher
+- `app` - koax app to bind state and mount store dispatcher
 
 **Returns:** store (redux store api excluding dispatch - koax app should be used to dispatch)
 
