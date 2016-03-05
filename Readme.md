@@ -6,6 +6,8 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
+![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square)
+
 Redux style store.
 
 ## Installation
